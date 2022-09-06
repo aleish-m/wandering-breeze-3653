@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 
-RSpec.describe Project, type: :feature do
+RSpec.describe "Project Show Page" do
   describe "As a visitor" do
     before :each do
       @recycled_material_challenge = Challenge.create!(theme: "Recycled Material", project_budget: 1000)
