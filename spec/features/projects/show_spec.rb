@@ -23,7 +23,9 @@ RSpec.describe Project, type: :feature do
         expect(page).to have_content("Newspaper")
       end
       it "I also see the theme of the challenge that this project belongs to" do
-        
+        visit "/projects/#{@news_chic.id}"
+
+        expect(page).to have_content("Recycled Material")
       end
     end
   end
