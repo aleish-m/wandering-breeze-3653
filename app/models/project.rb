@@ -4,4 +4,8 @@ class Project < ApplicationRecord
 
   validates_presence_of :name, :material
   belongs_to :challenge
+
+  def num_contestants
+    contestant_ids.count
+  end
 end
