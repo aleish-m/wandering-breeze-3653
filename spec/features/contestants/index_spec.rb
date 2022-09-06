@@ -41,7 +41,7 @@ RSpec.describe "Contestants Index Page" do
         within("#contestant-#{@gretchen.id}") do
           expect(page).to have_content(@news_chic.name)
           expect(page).to have_content(@upholstery_tux.name)
-        do
+        end
       end
 
     end
